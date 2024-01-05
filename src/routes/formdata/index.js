@@ -2,9 +2,9 @@ export const GET = (req, res) => {
   res.setHeader('Content-Type', 'text/plain');
 
   res.end(`
-      Name: John Doe
-      Age: 25
-      Email: john.doe@example.com
+      Name: Vladislav Orlenko
+      Age: 19
+      Email: vlad.pos1bl@gmail.com
   `);
 }
 
