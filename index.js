@@ -13,7 +13,6 @@ const proccessedContentTypes = {
     }
 };
 
-
 const server = http.createServer(async (req, res) => {
     const url = new URL(req.url || '/', `https://${req.headers.host}`);
     const routeModule = router.get(url.pathname) ?? {};
@@ -36,7 +35,7 @@ const server = http.createServer(async (req, res) => {
         handler(req, Object.assign(res, helpers), url, payload, rawRequest);
     } catch (e) {
         res.statusCode = 500;
-        res.end(e);
+        res.end('OOOPS. Bye Bye');
     }
 });
 
