@@ -1,5 +1,4 @@
 export const GET = (req, res) => {
-  throw "unhandled error";
   res.json({name: 'test handlerGet'})
 }
 
